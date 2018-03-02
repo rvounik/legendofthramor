@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: arial, verdana;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.0;
+    width: 100%;
+    height: inherit;
+    transition: opacity 0.5s ease-out;
+}
+
+body:hover .overlay {
+    transition: opacity 0.5s ease-out;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1000px;
+    z-index: 10;
+    position: relative;
+}
+
+.canvasHolder {
+    margin: 0 auto;
+    box-shadow: 0 5px 15px #aaa;
+    display: inline-block;
+}
+
+.canvasHolder {
+    line-height: 0;
+    font-size: 0;
+}
+
+header strong {
+    color: #999;
+}
+
+header h1 {
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+}
+
+article {
+    max-width: 640px;
+    float: left;
+}
+
+article p {
+    margin-top: 30px;
+    min-height: 200px;
+}
+
+article p strong {
+    display: block;
+    padding-top: 15px;
+}
+
+aside {
+    float: left;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 300px;
+    min-height: 600px;
+    line-height: 30px;
+}
+
+aside ul {
+    margin: 0;
+    list-style: url('/img/ico-triangle.png');
+    padding-left: 15px;
+}
+
+aside ul.inspiration li {
+    color: #ccc;
+}
+
+aside a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: solid 1px #666;
+}
+
+footer {
+    clear: both;
+    color: #ddd;
+    border-bottom: solid 1px #eee;
+    font-size: 11px;
+}
+
+footer span:hover:before {
+    content: "a 'very incapabable' ";
+}
+
+@media screen and (max-width: 768px) {
+    article p, aside, header, .overlay, footer {
+        display: none;
+    }
+
+    article {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wrapper {
+        max-width: 640px;
+    }
+
+    body {
+        margin: 0 auto;
+        padding: 0;
+        background: #000;
+    }
+
+    .canvasHolder {
+        box-shadow: none;
+        width: auto;
+        max-width: 768px;
+        height: auto;
+    }
+
+    #myCanvas {
+        width: 100%;
+    }
+}

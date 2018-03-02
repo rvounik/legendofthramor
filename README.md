@@ -8,8 +8,7 @@
   
 features:
 
-- Written in oldschool Javascript with help of the CreateJS libraries
-- Utilises HTML5, Canvas, CSS3 and Javascript
+- Written in HTML5, Canvas, CSS3 and (oldschool) Javascript
 - CreateJS libraries were used to preload assets and help with some game functions
 - Graphics and sound effects taken from Opengameart, Nosoapradio and adapted using Adobe software
 - The game is tile-based and consists of 350 locations (and yes, there is some repetition)
